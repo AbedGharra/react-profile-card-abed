@@ -1,0 +1,59 @@
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 35px 20px;
+  text-align: center;
+  background-color: white;
+  color: #1e293b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card h2 {
+  font-size: 23px;
+  margin: 20px 0 10px;
+  color: #1e293b;
+}
+
+.card h3 {
+  font-size: 16px;
+  color: #64748b;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.card.featured {
+  border: 2px solid #eab308;
+}
